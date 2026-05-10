@@ -1,0 +1,10 @@
+config SYSTEM_PTEST
+	tristate "Preemption test (ptest)"
+	default n
+	depends on SCHED_WAITPID
+	---help---
+		A two-task preemption demo. Type 'ptest' at the NSH prompt.
+		Two CPU-bound tasks run at the same priority. With round-robin
+		scheduling and a working timer interrupt, their output lines
+		interleave.
+

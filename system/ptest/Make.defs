@@ -1,0 +1,3 @@
+ifneq ($(CONFIG_SYSTEM_PTEST),)
+CONFIGURED_APPS += $(APPDIR)/system/ptest
+endif
