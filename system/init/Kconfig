@@ -1,0 +1,3 @@
+config SYSTEM_INIT
+    tristate "Tiny init for kernel build"
+    default n
