@@ -1,0 +1,26 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config EXAMPLES_MMUTEST
+	tristate "Super-Sv32 MMU evaluation test"
+	default n
+	---help---
+		Small file-loaded benchmark app for measuring text/data/heap page use.
+
+if EXAMPLES_MMUTEST
+
+config EXAMPLES_MMUTEST_PROGNAME
+	string "Program name"
+	default "mmutest"
+
+config EXAMPLES_MMUTEST_PRIORITY
+	int "MMU test task priority"
+	default 100
+
+config EXAMPLES_MMUTEST_STACKSIZE
+	int "MMU test stack size"
+	default 2048
+
+endif

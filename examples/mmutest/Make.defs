@@ -1,0 +1,7 @@
+############################################################################
+# apps/examples/mmutest/Make.defs
+############################################################################
+
+ifneq ($(CONFIG_EXAMPLES_MMUTEST),)
+CONFIGURED_APPS += $(APPDIR)/examples/mmutest
+endif
