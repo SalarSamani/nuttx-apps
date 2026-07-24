@@ -10,5 +10,6 @@ STACKSIZE = $(CONFIG_EXAMPLES_MMUTEST_STACKSIZE)
 MODULE    = $(CONFIG_EXAMPLES_MMUTEST)
 
 MAINSRC = mmutest_main.c
+CSRCS   = aes.c
 
 include $(APPDIR)/Application.mk
